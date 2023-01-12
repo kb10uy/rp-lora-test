@@ -5,7 +5,7 @@ use libftd2xx::{BitMode, BitsPerWord, Ftdi, FtdiCommon, Parity, StopBits};
 use rand::prelude::*;
 use time::{macros::format_description, OffsetDateTime};
 
-const FT_SERIAL_NUMBER: &str = "DQ0005AE";
+const FT_SERIAL_NUMBER: &str = "";
 
 fn main() -> Result<()> {
     let mut ftdi = Ftdi::with_serial_number(FT_SERIAL_NUMBER)?;
